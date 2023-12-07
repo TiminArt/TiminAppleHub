@@ -19,7 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let mvc = MyViewController()
         
         let nav1 = UINavigationController(rootViewController: vc)
-        let nav2 = UINavigationController(rootViewController: MyViewController())
+        let nav2 = UINavigationController(rootViewController: mvc)
         nav1.tabBarItem = UITabBarItem(tabBarSystemItem: .contacts, tag: 0)
         nav2.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 1)
         
