@@ -13,15 +13,19 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let scene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: scene)
         
+        let tb = UITabBarController()
+    
         let vc = ViewController()
-        let nav = UINavigationController(rootViewController: vc)
-        window?.rootViewController = nav
-
-//      Таб-бар
-//        let tabController = UITabBarController()
-//        tabController.viewControllers = [viewController, myViewController]
-//        window?.rootViewController = tabController
+        let mvc = MyViewController()
         
+        let nav1 = UINavigationController(rootViewController: vc)
+        let nav2 = UINavigationController(rootViewController: MyViewController())
+        nav1.tabBarItem = UITabBarItem(tabBarSystemItem: .contacts, tag: 0)
+        nav2.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 1)
+        
+        tb.viewControllers = [nav1, nav2]
+        
+        window?.rootViewController = tb
         window?.makeKeyAndVisible()
     }
 }

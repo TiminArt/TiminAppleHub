@@ -15,7 +15,6 @@ class ViewController: UIViewController {
         view.addSubview($0)
         $0.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         $0.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-        
         return $0
     }(UILabel())
     
