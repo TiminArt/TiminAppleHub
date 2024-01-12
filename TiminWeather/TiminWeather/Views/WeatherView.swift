@@ -9,7 +9,7 @@ struct WeatherView: View {
                     Text(weather.name)
                         .bold()
                         .font(.title)
-                    Text("Сейчас у вас \(Date().formatted(.dateTime.month().day().hour().minute()))")
+                    Text("Now \(Date().formatted(.dateTime.month().day().hour().minute()))")
                         .fontWeight(.light)
 
                 }
@@ -28,7 +28,7 @@ struct WeatherView: View {
                         .frame(width: 150, alignment: .leading)
                         Spacer()
                         Text(weather.main.feelsLike.roundDouble() + "°")
-                            .font(.system(size: 100))
+                            .font(.system(size: 80))
                             .fontWeight(.bold)
                             .padding()
                     }
@@ -51,8 +51,8 @@ struct WeatherView: View {
             
             VStack {
                 Spacer()
-                VStack(alignment: .leading, spacing: 20) {
-                    Text("Погода сейчас")
+                VStack(alignment: .leading, spacing: 40) {
+                    Text("Дополнительная информация")
                         .bold()
                         .padding(.bottom)
                     HStack {
@@ -68,7 +68,7 @@ struct WeatherView: View {
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding()
-                .padding(.bottom, 20)
+                .padding(.bottom, 40)
                 .foregroundColor(Color(hue: 0.656, saturation: 0.787, brightness: 0.354))
                 .background(.white)
                 .cornerRadius(20, corners: [.topLeft, .topRight])
