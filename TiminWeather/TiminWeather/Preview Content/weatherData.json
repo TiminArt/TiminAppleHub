@@ -1,0 +1,43 @@
+{
+    "coord": {
+        "lon": 37.6156,
+        "lat": 55.7522
+    },
+    "weather": [
+        {
+            "id": 803,
+            "main": "Облачно",
+            "description": "разорванные облака",
+            "icon": "04d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 1.99,
+        "feels_like": -1.67,
+        "temp_min": 1,
+        "temp_max": 2.78,
+        "pressure": 1024,
+        "humidity": 92
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 3,
+        "deg": 240
+    },
+    "clouds": {
+        "all": 75
+    },
+    "dt": 1638305295,
+    "sys": {
+        "type": 1,
+        "id": 9027,
+        "country": "RU",
+        "sunrise": 1638285154,
+        "sunset": 1638313535
+    },
+    "timezone": 10800,
+    "id": 524901,
+    "name": "Moscow",
+    "cod": 200
+}

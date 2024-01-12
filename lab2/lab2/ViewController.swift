@@ -1,14 +1,7 @@
-//
-//  ViewController.swift
-//  lab2
-//
-//  Created by Артемий Тимин on 04.12.2023.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     //Текст
     private lazy var lableMain: UILabel = {
         $0.translatesAutoresizingMaskIntoConstraints = false
@@ -20,18 +13,21 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//      Настройки страницы
         self.view.backgroundColor = .systemMint
-        self.navigationItem.title = "Main page"
-//        self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Button", style: .plain, target: nil, action: nil)
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "calendar"), style: .plain, target: self, action: #selector(didTapButton))
+        self.navigationItem.title = "Главная страница"
+        lableMain.text = "Список игр, которые сейчас прохожу"
+        
+//      Настройки навигации
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "info"), style: .plain, target: self, action: #selector(didTapButton))
         self.navigationController?.navigationBar.tintColor = UIColor.black
-        lableMain.text = "Hi! This is the welcome page of the calendar."
+        
+        
     }
-    
     //Функция кнопки
     @objc private func didTapButton() {
-        let vc = MyViewController()
-        self.navigationController?.pushViewController(vc, animated: true)
+        let infoController = InfoController()
+        self.navigationController?.pushViewController(infoController, animated: true)
     }
 }
-

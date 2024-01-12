@@ -1,10 +1,3 @@
-//
-//  SceneDelegate.swift
-//  lab2
-//
-//  Created by Артемий Тимин on 04.12.2023.
-//
-
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
@@ -13,19 +6,23 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let scene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: scene)
         
-        let tb = UITabBarController()
+        let tabBar = UITabBarController()
     
-        let vc = ViewController()
-        let mvc = MyViewController()
+        UITabBar.appearance().barTintColor = UIColor.blue
+        UITabBar.appearance().tintColor = UIColor.white
         
-        let nav1 = UINavigationController(rootViewController: vc)
-        let nav2 = UINavigationController(rootViewController: mvc)
+        
+        let viewController = ViewController()
+        let gameListController = GameListController()
+        
+        let nav1 = UINavigationController(rootViewController: viewController)
+        let nav2 = UINavigationController(rootViewController: gameListController)
         nav1.tabBarItem = UITabBarItem(tabBarSystemItem: .contacts, tag: 0)
-        nav2.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 1)
+        nav2.tabBarItem = UITabBarItem(tabBarSystemItem: .mostViewed, tag: 1)
         
-        tb.viewControllers = [nav1, nav2]
+        tabBar.viewControllers = [nav1, nav2]
         
-        window?.rootViewController = tb
+        window?.rootViewController = tabBar
         window?.makeKeyAndVisible()
     }
 }
