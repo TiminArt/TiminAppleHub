@@ -1,6 +1,8 @@
 import SwiftUI
 
 struct WeatherView: View {
+    @State var isPresented = false
+
     var weather: ResponseBody
     var body: some View {
         ZStack(alignment: .leading) {
@@ -49,6 +51,26 @@ struct WeatherView: View {
             .padding()
             .frame(maxWidth: .infinity, alignment: .leading)
             
+//          Переход на CountryView
+            VStack(alignment: .center) {
+                Button(action: {
+                    self.isPresented.toggle()
+                }) {
+                    Text("Просто кнопка")
+                        .foregroundColor(Color(hue: 0.556, saturation: 0.787, brightness: 0.454))
+                        .padding(10)
+                        .background(Color.white)
+                        .cornerRadius(20)
+                        .padding(20)
+                        .multilineTextAlignment(.center)
+                        
+                }
+            }
+            .sheet(isPresented: $isPresented) {
+                CountryView()
+            }
+            
+//          "Дополнительный" экран
             VStack {
                 Spacer()
                 VStack(alignment: .leading, spacing: 40) {
@@ -74,6 +96,7 @@ struct WeatherView: View {
                 .cornerRadius(20, corners: [.topLeft, .topRight])
             }
         }
+
         .edgesIgnoringSafeArea(.bottom)
         .background(Color(hue: 0.556, saturation: 0.787, brightness: 0.454))
         .preferredColorScheme(.dark)

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D4379C52B5554FC0081422F /* CountryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4379C42B5554FC0081422F /* CountryView.swift */; };
 		0DD0B3B62B515F860041D5C5 /* TiminWeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD0B3B52B515F860041D5C5 /* TiminWeatherApp.swift */; };
 		0DD0B3B82B515F860041D5C5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD0B3B72B515F860041D5C5 /* ContentView.swift */; };
 		0DD0B3BA2B515F870041D5C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DD0B3B92B515F870041D5C5 /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D4379C42B5554FC0081422F /* CountryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryView.swift; sourceTree = "<group>"; };
 		0DD0B3B22B515F860041D5C5 /* TiminWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TiminWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DD0B3B52B515F860041D5C5 /* TiminWeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiminWeatherApp.swift; sourceTree = "<group>"; };
 		0DD0B3B72B515F860041D5C5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -137,10 +139,11 @@
 		0DD0B3E22B51654B0041D5C5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				0DD0B3B72B515F860041D5C5 /* ContentView.swift */,
 				0DD0B3E32B5166100041D5C5 /* WelcomeView.swift */,
+				0DD0B3B72B515F860041D5C5 /* ContentView.swift */,
 				0DD0B3E52B516A9E0041D5C5 /* LoadingView.swift */,
 				0DD0B3E92B51738A0041D5C5 /* WeatherView.swift */,
+				0D4379C42B5554FC0081422F /* CountryView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 				0DD0B3EC2B5173EE0041D5C5 /* ModelData.swift in Sources */,
 				0DD0B3EA2B51738A0041D5C5 /* WeatherView.swift in Sources */,
 				0DD0B3E42B5166100041D5C5 /* WelcomeView.swift in Sources */,
+				0D4379C52B5554FC0081422F /* CountryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
