@@ -13,12 +13,9 @@ struct WeatherView: View {
                         .font(.title)
                     Text("Now \(Date().formatted(.dateTime.month().day().hour().minute()))")
                         .fontWeight(.light)
-
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
-                            
                 Spacer()
-                            
                 VStack {
                     HStack {
                         VStack(spacing: 20) {
@@ -56,7 +53,7 @@ struct WeatherView: View {
                 Button(action: {
                     self.isPresented.toggle()
                 }) {
-                    Text("Просто кнопка")
+                    Text("Нажмите сюда")
                         .foregroundColor(Color(hue: 0.556, saturation: 0.787, brightness: 0.454))
                         .padding(10)
                         .background(Color.white)

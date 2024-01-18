@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0D4379C52B5554FC0081422F /* CountryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4379C42B5554FC0081422F /* CountryView.swift */; };
+		0DB6DFAE2B595EC7003C282B /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB6DFAD2B595EC7003C282B /* InfoView.swift */; };
 		0DD0B3B62B515F860041D5C5 /* TiminWeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD0B3B52B515F860041D5C5 /* TiminWeatherApp.swift */; };
 		0DD0B3B82B515F860041D5C5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD0B3B72B515F860041D5C5 /* ContentView.swift */; };
 		0DD0B3BA2B515F870041D5C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DD0B3B92B515F870041D5C5 /* Assets.xcassets */; };
@@ -42,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		0D4379C42B5554FC0081422F /* CountryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryView.swift; sourceTree = "<group>"; };
+		0DB6DFAD2B595EC7003C282B /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		0DD0B3B22B515F860041D5C5 /* TiminWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TiminWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DD0B3B52B515F860041D5C5 /* TiminWeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiminWeatherApp.swift; sourceTree = "<group>"; };
 		0DD0B3B72B515F860041D5C5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 				0DD0B3E52B516A9E0041D5C5 /* LoadingView.swift */,
 				0DD0B3E92B51738A0041D5C5 /* WeatherView.swift */,
 				0D4379C42B5554FC0081422F /* CountryView.swift */,
+				0DB6DFAD2B595EC7003C282B /* InfoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 				0DD0B3E82B516C080041D5C5 /* WeatherManager.swift in Sources */,
 				0DD0B3F02B5176B20041D5C5 /* Extensions.swift in Sources */,
 				0DD0B3B82B515F860041D5C5 /* ContentView.swift in Sources */,
+				0DB6DFAE2B595EC7003C282B /* InfoView.swift in Sources */,
 				0DD0B3B62B515F860041D5C5 /* TiminWeatherApp.swift in Sources */,
 				0DD0B3E12B5160190041D5C5 /* LocationManager.swift in Sources */,
 				0DD0B3E62B516A9E0041D5C5 /* LoadingView.swift in Sources */,
